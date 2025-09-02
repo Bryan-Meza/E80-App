@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Electtric E80 - Graphics</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <div id="header"></div>
+  <div id="sidebar"></div>
+
+  <main>
+    <div class="charts-container">
+      <section class="chart-section">
+        <h2>Sales Data</h2>
+        <canvas id="chart1" data-endpoint="/api/sales"></canvas>
+      </section>
+      <section class="chart-section">
+        <h2>Production Analytics</h2>
+        <canvas id="chart2" data-endpoint="/api/production"></canvas>
+      </section>
+      <section class="chart-section">
+        <h2>Efficiency Metrics</h2>
+        <canvas id="chart3" data-endpoint="/api/efficiency"></canvas>
+      </section>
+      <section class="chart-section">
+        <h2>Quality Control</h2>
+        <canvas id="chart4" data-endpoint="/api/quality"></canvas>
+      </section>
+    </div>
+  </main>
+
+  <div id="footer"></div>
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="../script.js"></script>
+</body>
+</html>
