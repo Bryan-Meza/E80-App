@@ -1,32 +1,20 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Dashboard</title>
+  <title>Electtric E80 — Data</title>
 
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-  <!-- Estilos -->
-  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <!-- Componentes inyectados -->
   <div id="header"></div>
   <div id="sidebar"></div>
 
-  <!-- Sección de mapa -->
-  <section class="map-section">
-    <h2>Real Visualization</h2>
-    <div class="map-container">
-      <iframe
-        width="100%" height="100%" frameborder="0" scrolling="no"
-        src="https://www.openstreetmap.org/export/embed.html?bbox=-0.093%2C51.503%2C-0.081%2C51.507&amp;layer=mapnik">
-      </iframe>
-    </div>
-  </section>
-
-  <!-- Contenido principal -->
+  <!-- SOLO GRÁFICOS -->
   <main>
     <div class="charts-container">
       <section class="chart-section">
@@ -50,7 +38,7 @@
 
   <div id="footer"></div>
 
-  <!-- Scripts -->
+  <!-- JS -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
   <script src="script.js"></script>
 </body>
