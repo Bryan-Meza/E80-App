@@ -3,37 +3,43 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Electtric E80 - Graphics</title>
-  <link rel="stylesheet" href="../style.css" />
+  <title>Electtric E80 — Data</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
 <body>
   <div id="header"></div>
   <div id="sidebar"></div>
 
+  <!-- SOLO GRÁFICOS -->
   <main>
     <div class="charts-container">
       <section class="chart-section">
         <h2>Sales Data</h2>
-        <canvas id="chart1" data-endpoint="/api/sales"></canvas>
+        <canvas id="chart1"></canvas>
       </section>
       <section class="chart-section">
         <h2>Production Analytics</h2>
-        <canvas id="chart2" data-endpoint="/api/production"></canvas>
+        <canvas id="chart2"></canvas>
       </section>
       <section class="chart-section">
         <h2>Efficiency Metrics</h2>
-        <canvas id="chart3" data-endpoint="/api/efficiency"></canvas>
+        <canvas id="chart3"></canvas>
       </section>
       <section class="chart-section">
         <h2>Quality Control</h2>
-        <canvas id="chart4" data-endpoint="/api/quality"></canvas>
+        <canvas id="chart4"></canvas>
       </section>
     </div>
   </main>
 
   <div id="footer"></div>
 
+  <!-- JS -->
   <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-  <script src="../script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
