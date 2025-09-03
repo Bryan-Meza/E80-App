@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>{% block title %}Electtric E80{% endblock %}</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}" />
+  <!-- FontAwesome para iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  {% block extra_css %}{% endblock %}
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="header-content">
+      <a href="{{ url_for('index') }}" class="brand-header" aria-label="Ir a inicio">
+        <img src="{{ url_for('static', filename='img/logo.png') }}" alt="logo">
+      </a>
+
+      <h1>Dashboard</h1>
+
+      <!-- espacio de balance a la derecha (para centrar el h1) -->
+      <div class="header-right"></div>
+    </div>
+  </header>
+
+  <!-- Sidebar -->
+  <nav class="sidebar" aria-label="Sidebar navigation">
+    <ul class="menu">
+      <li>
+        &nbsp;
+        <a href="{{ url_for('index') }}" class="item {% if request.endpoint == 'index' %}active{% endif %}">
+          <span class="icon"><i class="fa-solid fa-house"></i></span>
+          <span class="label">Inicio</span>
+          <span class="right"><i class="fa-solid fa-angle-right chev"></i></span>
+        </a>
+      </li>
+      <li>
+        <a href="{{ url_for('graphics') }}" class="item {% if request.endpoint == 'graphics' %}active{% endif %}">
+          <span class="icon"><i class="fa-solid fa-chart-line"></i></span>
+          <span class="label">Graphics</span>
+          <span class="right"><i class="fa-solid fa-angle-right chev"></i></span>
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  {% block content %}{% endblock %}
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Electtric E80</p>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+  {% block extra_js %}{% endblock %}
+</body>
+</html>
