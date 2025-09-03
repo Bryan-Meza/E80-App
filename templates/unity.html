@@ -1,0 +1,225 @@
+{% extends "base.html" %}
+
+{% block title %}Unity Screenshots - Electtric E80{% endblock %}
+
+{% block extra_css %}
+<style>
+  .unity-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .unity-header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .unity-header h2 {
+    color: #ffd700;
+    margin-bottom: 10px;
+  }
+  
+  .status-indicator {
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin: 10px 0;
+  }
+  
+  .status-connected {
+    background-color: rgba(0, 255, 0, 0.2);
+    color: #00ff00;
+    border: 1px solid #00ff00;
+  }
+  
+  .status-disconnected {
+    background-color: rgba(255, 0, 0, 0.2);
+    color: #ff0000;
+    border: 1px solid #ff0000;
+  }
+  
+  .screenshots-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .screenshot-card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 15px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    transition: transform 0.3s ease;
+  }
+  
+  .screenshot-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .screenshot-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+  
+  .screenshot-info {
+    color: #ccc;
+    font-size: 12px;
+  }
+  
+  .refresh-button {
+    background: linear-gradient(135deg, #ffd700, #ffed4e);
+    color: #000;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: bold;
+    margin: 20px auto;
+    display: block;
+    transition: all 0.3s ease;
+  }
+  
+  .refresh-button:hover {
+    background: linear-gradient(135deg, #ffed4e, #ffd700);
+    transform: scale(1.05);
+  }
+  
+  .no-screenshots {
+    text-align: center;
+    color: #666;
+    margin: 50px 0;
+  }
+  
+  .latest-screenshot {
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  
+  .latest-screenshot img {
+    max-width: 100%;
+    max-height: 400px;
+    border-radius: 10px;
+    border: 2px solid #ffd700;
+  }
+</style>
+{% endblock %}
+
+{% block content %}
+<main class="unity-container">
+  <div class="unity-header">
+    <h2><i class="fa-solid fa-gamepad"></i> Unity Screenshots</h2>
+    <div id="connectionStatus" class="status-indicator status-disconnected">
+      <i class="fa-solid fa-circle"></i> Checking connection...
+    </div>
+    <button class="refresh-button" onclick="loadScreenshots()">
+      <i class="fa-solid fa-rotate-right"></i> Refresh
+    </button>
+  </div>
+
+  <div id="latestScreenshot" class="latest-screenshot" style="display: none;">
+    <h3>Latest Screenshot</h3>
+    <img id="latestImage" src="" alt="Latest screenshot from Unity">
+    <p id="latestTimestamp"></p>
+  </div>
+
+  <div id="screenshotsContainer">
+    <div class="no-screenshots">
+      <i class="fa-solid fa-image" style="font-size: 48px; color: #666; margin-bottom: 20px;"></i>
+      <p>No screenshots received yet.</p>
+      <p>Make sure Unity is running and sending screenshots to:</p>
+      <code>http://localhost:5000/api/upload</code>
+    </div>
+  </div>
+</main>
+{% endblock %}
+
+{% block extra_js %}
+<script>
+let lastScreenshotCount = 0;
+
+function formatTimestamp(timestamp) {
+  const date = new Date(timestamp * 1000);
+  return date.toLocaleString();
+}
+
+function updateConnectionStatus(connected) {
+  const statusElement = document.getElementById('connectionStatus');
+  if (connected) {
+    statusElement.className = 'status-indicator status-connected';
+    statusElement.innerHTML = '<i class="fa-solid fa-circle"></i> Unity Connected';
+  } else {
+    statusElement.className = 'status-indicator status-disconnected';
+    statusElement.innerHTML = '<i class="fa-solid fa-circle"></i> Unity Disconnected';
+  }
+}
+
+function loadScreenshots() {
+  fetch('/api/screenshots')
+    .then(response => response.json())
+    .then(data => {
+      const container = document.getElementById('screenshotsContainer');
+      const latestContainer = document.getElementById('latestScreenshot');
+      
+      if (data.screenshots && data.screenshots.length > 0) {
+        updateConnectionStatus(true);
+        
+        // Show latest screenshot
+        const latest = data.screenshots[0];
+        document.getElementById('latestImage').src = latest.url;
+        document.getElementById('latestTimestamp').textContent = 
+          `Received: ${formatTimestamp(latest.timestamp)}`;
+        latestContainer.style.display = 'block';
+        
+        // Create grid for all screenshots
+        let html = '<div class="screenshots-grid">';
+        data.screenshots.forEach((screenshot, index) => {
+          html += `
+            <div class="screenshot-card">
+              <img src="${screenshot.url}" alt="Screenshot ${index + 1}" class="screenshot-image">
+              <div class="screenshot-info">
+                <strong>${screenshot.filename}</strong><br>
+                ${formatTimestamp(screenshot.timestamp)}
+              </div>
+            </div>
+          `;
+        });
+        html += '</div>';
+        container.innerHTML = html;
+        
+        // Update count for connection detection
+        if (data.screenshots.length > lastScreenshotCount) {
+          lastScreenshotCount = data.screenshots.length;
+        }
+      } else {
+        updateConnectionStatus(false);
+        latestContainer.style.display = 'none';
+        container.innerHTML = `
+          <div class="no-screenshots">
+            <i class="fa-solid fa-image" style="font-size: 48px; color: #666; margin-bottom: 20px;"></i>
+            <p>No screenshots received yet.</p>
+            <p>Make sure Unity is running and sending screenshots to:</p>
+            <code>http://localhost:5000/api/upload</code>
+          </div>
+        `;
+      }
+    })
+    .catch(error => {
+      console.error('Error loading screenshots:', error);
+      updateConnectionStatus(false);
+    });
+}
+
+// Load screenshots on page load
+document.addEventListener('DOMContentLoaded', loadScreenshots);
+
+// Auto-refresh every 2 seconds
+setInterval(loadScreenshots, 2000);
+</script>
+{% endblock %}
