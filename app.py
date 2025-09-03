@@ -6,6 +6,10 @@ from datetime import datetime
 
 app = Flask(__name__)
 
+# Variable global para stream en vivo (sin archivos)
+live_frame = None
+live_timestamp = None
+
 # Enable CORS for Unity requests
 @app.after_request
 def after_request(response):
@@ -31,82 +35,122 @@ def unity():
 
 @app.route('/api/upload', methods=['POST'])
 def api_upload():
-    """Receive screenshot from Unity"""
-    print(f"Received request method: {request.method}")
-    print(f"Content type: {request.content_type}")
-    
+    """Receive screenshot from Unity - ULTRA FAST MODE"""
     try:
-        # Get JSON data from Unity
+        # Get JSON data from Unity (sin logs para máxima velocidad)
         data = request.get_json()
         
-        print(f"Received data: {type(data)}")
-        
         if not data or 'imageBase64' not in data:
-            print("Error: No image data provided")
-            return jsonify({'error': 'No image data provided'}), 400
+            return jsonify({'error': 'No data'}), 400
         
         # Decode base64 image
-        image_data = data['imageBase64']
-        print(f"Image data length: {len(image_data)}")
-        
-        image_bytes = base64.b64decode(image_data)
+        image_bytes = base64.b64decode(data['imageBase64'])
         
         # Create screenshots directory if it doesn't exist
         screenshots_dir = os.path.join('static', 'screenshots')
         if not os.path.exists(screenshots_dir):
             os.makedirs(screenshots_dir)
         
-        # Generate filename with timestamp
-        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S_%f")[:-3]  # milliseconds
-        filename = f"screenshot_{timestamp}.jpg"
+        # Nombre de archivo ultra simple para máxima velocidad
+        timestamp = datetime.now().strftime("%H%M%S%f")  # Solo hora para velocidad
+        filename = f"f_{timestamp}.jpg"
         filepath = os.path.join(screenshots_dir, filename)
         
-        # Save the image
+        # Save the image (sin logs)
         with open(filepath, 'wb') as f:
             f.write(image_bytes)
         
-        print(f"Screenshot saved: {filepath}")
+        # Limpiar archivos cada 200 requests para máxima velocidad
+        import random
+        if random.randint(1, 200) == 1:
+            cleanup_old_screenshots(screenshots_dir, max_files=20)  # Solo 20 archivos max
         
-        # Return success response
-        return jsonify({
-            'status': 'success',
-            'message': 'Screenshot received and saved',
-            'filename': filename,
-            'timestamp': timestamp
-        }), 200
+        # Respuesta mínima para máxima velocidad
+        return jsonify({'ok': 1}), 200
         
-    except Exception as e:
-        print(f"Error processing screenshot: {str(e)}")
-        return jsonify({'error': f'Failed to process image: {str(e)}'}), 500
+    except:
+        return jsonify({'error': 'fail'}), 500
+
+@app.route('/api/live', methods=['POST'])
+def api_live():
+    """Receive live stream - NO FILES, PURE SPEED"""
+    global live_frame, live_timestamp
+    
+    try:
+        data = request.get_json()
+        if data and 'imageBase64' in data:
+            # Solo guardar en memoria - SIN ARCHIVOS
+            live_frame = data['imageBase64']
+            live_timestamp = datetime.now().timestamp()
+            return '{"ok":1}', 200  # Respuesta mínima
+    except:
+        pass
+    
+    return '{"error":1}', 400
+
+@app.route('/api/live-frame')
+def api_live_frame():
+    """Get current live frame from memory"""
+    global live_frame, live_timestamp
+    
+    if live_frame and live_timestamp:
+        # Verificar que el frame sea reciente (menos de 1 segundo)
+        if (datetime.now().timestamp() - live_timestamp) < 1:
+            return jsonify({
+                'frame': live_frame,
+                'timestamp': live_timestamp,
+                'live': True
+            })
+    
+    return jsonify({'live': False})
+
+def cleanup_old_screenshots(screenshots_dir, max_files=20):
+    """Mantiene solo los archivos más recientes - ULTRA FAST"""
+    try:
+        files = []
+        for filename in os.listdir(screenshots_dir):
+            if filename.endswith('.jpg'):
+                filepath = os.path.join(screenshots_dir, filename)
+                files.append((filepath, os.path.getctime(filepath)))
+        
+        # Ordenar y mantener solo los más recientes (menos archivos = más velocidad)
+        files.sort(key=lambda x: x[1], reverse=True)
+        
+        # Eliminar archivos antiguos rápidamente
+        for filepath, _ in files[max_files:]:
+            try:
+                os.remove(filepath)
+            except:
+                pass
+                
+    except:
+        pass  # Ignorar todos los errores para máxima velocidad
 
 @app.route('/api/screenshots')
 def api_screenshots():
-    """Get list of recent screenshots"""
+    """Get list of recent screenshots - ULTRA FAST MODE"""
     try:
         screenshots_dir = os.path.join('static', 'screenshots')
         if not os.path.exists(screenshots_dir):
             return jsonify({'screenshots': []})
         
-        # Get all screenshot files
+        # Solo obtener archivos rápidamente
         files = []
         for filename in os.listdir(screenshots_dir):
-            if filename.endswith('.jpg') and filename.startswith('screenshot_'):
-                filepath = os.path.join(screenshots_dir, filename)
-                timestamp = os.path.getctime(filepath)
+            if filename.endswith('.jpg'):
                 files.append({
                     'filename': filename,
                     'url': f'/static/screenshots/{filename}',
-                    'timestamp': timestamp
+                    'timestamp': os.path.getctime(os.path.join(screenshots_dir, filename))
                 })
         
-        # Sort by timestamp (newest first)
+        # Sort y solo retornar los 3 más recientes para máxima velocidad
         files.sort(key=lambda x: x['timestamp'], reverse=True)
         
-        # Return only the 10 most recent
-        return jsonify({'screenshots': files[:10]})
+        return jsonify({'screenshots': files[:3]})  # Solo 3 para velocidad extrema
         
-    except Exception as e:
-        return jsonify({'error': f'Failed to get screenshots: {str(e)}'}), 500
+    except:
+        return jsonify({'screenshots': []})
 
 # API endpoints for chart data (demo data)
 @app.route('/api/sales')

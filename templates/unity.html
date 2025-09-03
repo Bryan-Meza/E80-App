@@ -114,19 +114,19 @@
 {% block content %}
 <main class="unity-container">
   <div class="unity-header">
-    <h2><i class="fa-solid fa-gamepad"></i> Unity Screenshots</h2>
+    <h2><i class="fa-solid fa-video"></i> Unity Live Stream</h2>
     <div id="connectionStatus" class="status-indicator status-disconnected">
       <i class="fa-solid fa-circle"></i> Checking connection...
     </div>
-    <button class="refresh-button" onclick="loadScreenshots()">
-      <i class="fa-solid fa-rotate-right"></i> Refresh
+    <button class="refresh-button" onclick="loadLiveStream()">
+      <i class="fa-solid fa-bolt"></i> Refresh Live Stream
     </button>
   </div>
 
   <div id="latestScreenshot" class="latest-screenshot" style="display: none;">
-    <h3>Latest Screenshot</h3>
-    <img id="latestImage" src="" alt="Latest screenshot from Unity">
-    <p id="latestTimestamp"></p>
+    <h3><i class="fa-solid fa-bolt"></i> HYPER SPEED Live Stream</h3>
+    <img id="latestImage" src="" alt="Live stream from Unity" style="max-width: 100%; max-height: 500px; border-radius: 10px; border: 2px solid #00ff00;">
+    <p id="latestTimestamp" style="color: #00ff00; font-weight: bold;"></p>
   </div>
 
   <div id="screenshotsContainer">
@@ -153,73 +153,60 @@ function updateConnectionStatus(connected) {
   const statusElement = document.getElementById('connectionStatus');
   if (connected) {
     statusElement.className = 'status-indicator status-connected';
-    statusElement.innerHTML = '<i class="fa-solid fa-circle"></i> Unity Connected';
+    statusElement.innerHTML = '<i class="fa-solid fa-circle"></i> Live Stream Active';
   } else {
     statusElement.className = 'status-indicator status-disconnected';
-    statusElement.innerHTML = '<i class="fa-solid fa-circle"></i> Unity Disconnected';
+    statusElement.innerHTML = '<i class="fa-solid fa-circle"></i> No Live Stream';
   }
 }
 
-function loadScreenshots() {
-  fetch('/api/screenshots')
+function loadLiveStream() {
+  // Usar live stream en memoria para máxima velocidad
+  fetch('/api/live-frame')
     .then(response => response.json())
     .then(data => {
-      const container = document.getElementById('screenshotsContainer');
       const latestContainer = document.getElementById('latestScreenshot');
+      const container = document.getElementById('screenshotsContainer');
       
-      if (data.screenshots && data.screenshots.length > 0) {
+      if (data.live && data.frame) {
         updateConnectionStatus(true);
         
-        // Show latest screenshot
-        const latest = data.screenshots[0];
-        document.getElementById('latestImage').src = latest.url;
+        // Mostrar frame en vivo desde memoria
+        const imgSrc = 'data:image/jpeg;base64,' + data.frame;
+        document.getElementById('latestImage').src = imgSrc;
         document.getElementById('latestTimestamp').textContent = 
-          `Received: ${formatTimestamp(latest.timestamp)}`;
+          `🔴 LIVE - ${new Date().toLocaleTimeString()}`;
         latestContainer.style.display = 'block';
         
-        // Create grid for all screenshots
-        let html = '<div class="screenshots-grid">';
-        data.screenshots.forEach((screenshot, index) => {
-          html += `
-            <div class="screenshot-card">
-              <img src="${screenshot.url}" alt="Screenshot ${index + 1}" class="screenshot-image">
-              <div class="screenshot-info">
-                <strong>${screenshot.filename}</strong><br>
-                ${formatTimestamp(screenshot.timestamp)}
-              </div>
-            </div>
-          `;
-        });
-        html += '</div>';
-        container.innerHTML = html;
+        container.innerHTML = '<div style="text-align: center; color: #00ff00;"><i class="fa-solid fa-video"></i> LIVE STREAM ACTIVE - HYPER SPEED MODE</div>';
         
-        // Update count for connection detection
-        if (data.screenshots.length > lastScreenshotCount) {
-          lastScreenshotCount = data.screenshots.length;
-        }
       } else {
         updateConnectionStatus(false);
         latestContainer.style.display = 'none';
         container.innerHTML = `
           <div class="no-screenshots">
-            <i class="fa-solid fa-image" style="font-size: 48px; color: #666; margin-bottom: 20px;"></i>
-            <p>No screenshots received yet.</p>
-            <p>Make sure Unity is running and sending screenshots to:</p>
-            <code>http://localhost:5000/api/upload</code>
+            <i class="fa-solid fa-video-slash" style="font-size: 48px; color: #666; margin-bottom: 20px;"></i>
+            <p>No live stream active.</p>
+            <p>Use HyperSpeedStreamer.cs and connect to:</p>
+            <code>http://localhost:5000/api/live</code>
           </div>
         `;
       }
     })
     .catch(error => {
-      console.error('Error loading screenshots:', error);
       updateConnectionStatus(false);
     });
 }
 
-// Load screenshots on page load
-document.addEventListener('DOMContentLoaded', loadScreenshots);
+// Fallback a screenshots si live stream no está disponible
+function loadScreenshots() {
+  loadLiveStream(); // Siempre intentar live stream primero
+}
 
-// Auto-refresh every 2 seconds
-setInterval(loadScreenshots, 2000);
+// Load screenshots on page load
+document.addEventListener('DOMContentLoaded', loadLiveStream);
+
+// Auto-refresh HÍPER RÁPIDO (100ms = 10fps de actualización web)
+setInterval(loadLiveStream, 100);
 </script>
 {% endblock %}

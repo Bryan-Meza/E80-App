@@ -5,13 +5,13 @@ using UnityEngine.Networking;
 public class FrameSenderSimple : MonoBehaviour
 {
     // URL de tu servidor Flask
-    public string serverUrl = "http://localhost:5000/api/upload";
+    public string serverUrl = "http://localhost:5000/api/live"; // Cambio a live stream
     
-    // Intervalo entre capturas (en segundos)
-    public float captureInterval = 0.2f; // 5 FPS
+    // Intervalo entre capturas (en segundos) - HÍPER RÁPIDO
+    public float captureInterval = 0.0f; // SIN ESPERA - Máxima velocidad
     
     // Para debugging
-    public bool enableLogging = true;
+    public bool enableLogging = false; // Deshabilitado para máxima velocidad
 
     void Start()
     {
@@ -36,8 +36,8 @@ public class FrameSenderSimple : MonoBehaviour
                     continue;
                 }
 
-                // Convierte a JPG
-                byte[] imageBytes = tex.EncodeToJPG(75);
+                // Convierte a JPG con calidad híper baja para velocidad extrema
+                byte[] imageBytes = tex.EncodeToJPG(10); // Calidad mínima absoluta
 
                 // Convierte a Base64
                 string base64String = System.Convert.ToBase64String(imageBytes);
@@ -58,8 +58,11 @@ public class FrameSenderSimple : MonoBehaviour
                 if (enableLogging) Debug.LogError($"Error capturing frame: {e.Message}");
             }
 
-            // Espera antes del siguiente frame
-            yield return new WaitForSeconds(captureInterval);
+            // Espera HÍPER mínima para velocidad extrema
+            if (captureInterval > 0)
+                yield return new WaitForSeconds(captureInterval);
+            else
+                yield return null; // Solo un frame si es 0
         }
     }
 

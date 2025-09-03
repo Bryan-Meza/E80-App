@@ -6,14 +6,14 @@ public class FrameSender : MonoBehaviour
     // URL de tu servidor Flask (asegúrate de que coincida con tu servidor)
     public string serverUrl = "http://localhost:5000/api/upload";
     
-    // Intervalo entre capturas (en segundos)
-    public float captureInterval = 0.2f; // 5 FPS
+    // Intervalo entre capturas (en segundos) - ULTRA RÁPIDO
+    public float captureInterval = 0.016f; // ~60 FPS (1/60 = 0.016)
     
-    // Calidad de la imagen JPG (0-100)
-    public int jpgQuality = 75;
+    // Calidad de la imagen JPG (0-100) - MUY BAJA para máxima velocidad
+    public int jpgQuality = 30; // Calidad muy baja para velocidad extrema
     
     // Para debugging
-    public bool enableLogging = true;
+    public bool enableLogging = false; // Deshabilitado para mejor rendimiento
 
     void Start()
     {
