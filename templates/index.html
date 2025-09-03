@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}Electtric E80 - Dashboard{% endblock %}
+
+{% block content %}
+<!-- Sección de mapa -->
+<section class="map-section">
+  <h2>Real Visualization</h2>
+  <div class="map-container">
+    <iframe
+      width="100%" height="100%" frameborder="0" scrolling="no"
+      src="https://www.openstreetmap.org/export/embed.html?bbox=-0.093%2C51.503%2C-0.081%2C51.507&amp;layer=mapnik">
+    </iframe>
+  </div>
+</section>
+{% endblock %}

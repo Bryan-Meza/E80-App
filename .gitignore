@@ -45,13 +45,3 @@ Thumbs.db
 # Environment variables
 .env
 .env.local
-
-# Old static files (can be removed after migration)
-index.html
-graphic.html
-header.html
-sidebar.html
-footer.html
-style.css
-script.js
-img/
