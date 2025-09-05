@@ -2,6 +2,9 @@ from flask import Flask, render_template, jsonify, request
 import random
 import base64
 import os
+import requests
+import json
+import time
 from datetime import datetime
 
 app = Flask(__name__)
@@ -9,6 +12,15 @@ app = Flask(__name__)
 # Variable global para stream en vivo (sin archivos)
 live_frame = None
 live_timestamp = None
+
+# Variables para telemetría
+PYTHON_SERVER_URL = "http://localhost:8080"
+TELEMETRY_DATA_DIR = "telemetryData"
+session_start_time = time.time()
+
+# Crear directorio de telemetría si no existe
+if not os.path.exists(TELEMETRY_DATA_DIR):
+    os.makedirs(TELEMETRY_DATA_DIR)
 
 # Enable CORS for Unity requests
 @app.after_request
@@ -191,6 +203,93 @@ def api_efficiency():
             'backgroundColor': 'rgba(255, 107, 107, 0.1)'
         }]
     })
+
+@app.route('/api/telemetry')
+def api_telemetry():
+    """Get battery telemetry data from Python server"""
+    try:
+        # Consultar datos del servidor Python
+        response = requests.get(f"{PYTHON_SERVER_URL}/get_data", timeout=2)
+        
+        if response.status_code == 200:
+            python_data = response.json()
+            
+            # Extraer datos de batería de los agentes
+            agents_battery = []
+            if 'agents' in python_data:
+                for agent in python_data['agents']:
+                    agents_battery.append({
+                        'id': agent['id'],
+                        'battery': agent['battery'],
+                        'position': agent.get('position', {}),
+                        'has_object': agent.get('has_object', False),
+                        'has_task': agent.get('has_task', False)
+                    })
+            
+            # Preparar datos para el frontend
+            telemetry_data = {
+                'timestamp': time.time(),
+                'relative_time': int(time.time() - session_start_time),
+                'agents': agents_battery,
+                'success': True
+            }
+            
+            # Guardar datos en archivo de sesión
+            save_telemetry_data(telemetry_data)
+            
+            return jsonify(telemetry_data)
+        
+        else:
+            return jsonify({
+                'timestamp': time.time(),
+                'relative_time': int(time.time() - session_start_time),
+                'agents': [],
+                'success': False,
+                'error': f'Python server responded with status {response.status_code}'
+            })
+    
+    except requests.exceptions.RequestException as e:
+        return jsonify({
+            'timestamp': time.time(),
+            'relative_time': int(time.time() - session_start_time),
+            'agents': [],
+            'success': False,
+            'error': f'Failed to connect to Python server: {str(e)}'
+        })
+
+def save_telemetry_data(data):
+    """Save telemetry data to session file"""
+    try:
+        session_file = os.path.join(TELEMETRY_DATA_DIR, f"session_{int(session_start_time)}.json")
+        
+        # Leer datos existentes o crear nuevo archivo
+        if os.path.exists(session_file):
+            with open(session_file, 'r') as f:
+                session_data = json.load(f)
+        else:
+            session_data = {
+                'session_start': session_start_time,
+                'session_start_datetime': datetime.fromtimestamp(session_start_time).isoformat(),
+                'telemetry_points': []
+            }
+        
+        # Añadir nuevo punto de datos
+        session_data['telemetry_points'].append({
+            'timestamp': data['timestamp'],
+            'relative_time': data['relative_time'],
+            'agents': data['agents']
+        })
+        
+        # Mantener solo los últimos 1000 puntos para evitar archivos muy grandes
+        if len(session_data['telemetry_points']) > 1000:
+            session_data['telemetry_points'] = session_data['telemetry_points'][-1000:]
+        
+        # Guardar datos actualizados
+        with open(session_file, 'w') as f:
+            json.dump(session_data, f, indent=2)
+            
+    except Exception as e:
+        print(f"Error saving telemetry data: {e}")
 
 @app.route('/api/quality')
 def api_quality():

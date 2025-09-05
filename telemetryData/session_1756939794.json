@@ -1,0 +1,4520 @@
+{
+  "session_start": 1756939794.888239,
+  "session_start_datetime": "2025-09-03T16:49:54.888239",
+  "telemetry_points": [
+    {
+      "timestamp": 1756939819.1534994,
+      "relative_time": 24,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 229,
+          "position": {
+            "x": 10,
+            "y": 0,
+            "z": 2
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 2,
+          "battery": 763,
+          "position": {
+            "x": -10,
+            "y": 0,
+            "z": 6
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 3,
+          "battery": 839,
+          "position": {
+            "x": -6,
+            "y": 0,
+            "z": -6
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 4,
+          "battery": 883,
+          "position": {
+            "x": -10,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 5,
+          "battery": 193,
+          "position": {
+            "x": -4,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": false,
+          "has_task": false
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939821.4181607,
+      "relative_time": 26,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 208,
+          "position": {
+            "x": 6,
+            "y": 0,
+            "z": -8
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 2,
+          "battery": 746,
+          "position": {
+            "x": -10,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 3,
+          "battery": 819,
+          "position": {
+            "x": -4,
+            "y": 0,
+            "z": -8
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 4,
+          "battery": 866,
+          "position": {
+            "x": -6,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 5,
+          "battery": 176,
+          "position": {
+            "x": -4,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939823.6657436,
+      "relative_time": 28,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 187,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 2,
+          "battery": 724,
+          "position": {
+            "x": -4,
+            "y": 0,
+            "z": 2
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 3,
+          "battery": 798,
+          "position": {
+            "x": -6,
+            "y": 0,
+            "z": -8
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 4,
+          "battery": 846,
+          "position": {
+            "x": -4,
+            "y": 0,
+            "z": -10
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 5,
+          "battery": 158,
+          "position": {
+            "x": 4,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939825.9440234,
+      "relative_time": 31,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 170,
+          "position": {
+            "x": -2,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 2,
+          "battery": 702,
+          "position": {
+            "x": 6,
+            "y": 0,
+            "z": -6
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 3,
+          "battery": 776,
+          "position": {
+            "x": -6,
+            "y": 0,
+            "z": -8
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 4,
+          "battery": 825,
+          "position": {
+            "x": -8,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 5,
+          "battery": 140,
+          "position": {
+            "x": 8,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939828.2132428,
+      "relative_time": 33,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 155,
+          "position": {
+            "x": 8,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 2,
+          "battery": 682,
+          "position": {
+            "x": -6,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 3,
+          "battery": 755,
+          "position": {
+            "x": -8,
+            "y": 0,
+            "z": -8
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 4,
+          "battery": 805,
+          "position": {
+            "x": -4,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 5,
+          "battery": 120,
+          "position": {
+            "x": 4,
+            "y": 0,
+            "z": -8
+          },
+          "has_object": false,
+          "has_task": true
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939830.456543,
+      "relative_time": 35,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 138,
+          "position": {
+            "x": -6,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 2,
+          "battery": 662,
+          "position": {
+            "x": 4,
+            "y": 0,
+            "z": 2
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 3,
+          "battery": 734,
+          "position": {
+            "x": -6,
+            "y": 0,
+            "z": -8
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 4,
+          "battery": 784,
+          "position": {
+            "x": -2,
+            "y": 0,
+            "z": -8
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 5,
+          "battery": 99,
+          "position": {
+            "x": -2,
+            "y": 0,
+            "z": 6
+          },
+          "has_object": true,
+          "has_task": true
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939832.7333446,
+      "relative_time": 37,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 119,
+          "position": {
+            "x": 2,
+            "y": 0,
+            "z": 2
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 2,
+          "battery": 641,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 6
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 3,
+          "battery": 713,
+          "position": {
+            "x": -8,
+            "y": 0,
+            "z": -8
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 4,
+          "battery": 763,
+          "position": {
+            "x": -8,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 5,
+          "battery": 80,
+          "position": {
+            "x": -4,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939835.0428843,
+      "relative_time": 40,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 98,
+          "position": {
+            "x": -2,
+            "y": 0,
+            "z": -8
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 2,
+          "battery": 619,
+          "position": {
+            "x": 8,
+            "y": 0,
+            "z": -4
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 3,
+          "battery": 695,
+          "position": {
+            "x": -4,
+            "y": 0,
+            "z": -8
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 4,
+          "battery": 742,
+          "position": {
+            "x": -8,
+            "y": 0,
+            "z": 2
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 5,
+          "battery": 61,
+          "position": {
+            "x": 2,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939837.2677813,
+      "relative_time": 42,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 77,
+          "position": {
+            "x": -6,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 2,
+          "battery": 599,
+          "position": {
+            "x": 8,
+            "y": 0,
+            "z": -6
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 3,
+          "battery": 674,
+          "position": {
+            "x": -2,
+            "y": 0,
+            "z": -8
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 4,
+          "battery": 724,
+          "position": {
+            "x": -8,
+            "y": 0,
+            "z": 2
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 5,
+          "battery": 44,
+          "position": {
+            "x": 8,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939839.5633907,
+      "relative_time": 44,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 58,
+          "position": {
+            "x": -6,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 2,
+          "battery": 578,
+          "position": {
+            "x": -2,
+            "y": 0,
+            "z": 6
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 3,
+          "battery": 652,
+          "position": {
+            "x": -6,
+            "y": 0,
+            "z": -8
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 4,
+          "battery": 703,
+          "position": {
+            "x": -10,
+            "y": 0,
+            "z": 4
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 5,
+          "battery": 27,
+          "position": {
+            "x": 4,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": false,
+          "has_task": false
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939841.8548834,
+      "relative_time": 46,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 42,
+          "position": {
+            "x": 2,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 2,
+          "battery": 557,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 4
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 3,
+          "battery": 631,
+          "position": {
+            "x": -4,
+            "y": 0,
+            "z": -8
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 4,
+          "battery": 681,
+          "position": {
+            "x": -8,
+            "y": 0,
+            "z": -6
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 5,
+          "battery": 984,
+          "position": {
+            "x": 6,
+            "y": 0,
+            "z": -8
+          },
+          "has_object": false,
+          "has_task": true
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939844.1014423,
+      "relative_time": 49,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 27,
+          "position": {
+            "x": 10,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 2,
+          "battery": 539,
+          "position": {
+            "x": -2,
+            "y": 0,
+            "z": -2
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 3,
+          "battery": 611,
+          "position": {
+            "x": -4,
+            "y": 0,
+            "z": -8
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 4,
+          "battery": 661,
+          "position": {
+            "x": -8,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 5,
+          "battery": 965,
+          "position": {
+            "x": 2,
+            "y": 0,
+            "z": -8
+          },
+          "has_object": true,
+          "has_task": true
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939846.374517,
+      "relative_time": 51,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 995,
+          "position": {
+            "x": 8,
+            "y": 0,
+            "z": 6
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 2,
+          "battery": 518,
+          "position": {
+            "x": 8,
+            "y": 0,
+            "z": -10
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 3,
+          "battery": 590,
+          "position": {
+            "x": -4,
+            "y": 0,
+            "z": 4
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 4,
+          "battery": 642,
+          "position": {
+            "x": -2,
+            "y": 0,
+            "z": -10
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 5,
+          "battery": 944,
+          "position": {
+            "x": -6,
+            "y": 0,
+            "z": 6
+          },
+          "has_object": true,
+          "has_task": true
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939848.667163,
+      "relative_time": 53,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 976,
+          "position": {
+            "x": 8,
+            "y": 0,
+            "z": 4
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 2,
+          "battery": 498,
+          "position": {
+            "x": -2,
+            "y": 0,
+            "z": 6
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 3,
+          "battery": 572,
+          "position": {
+            "x": -6,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 4,
+          "battery": 622,
+          "position": {
+            "x": -4,
+            "y": 0,
+            "z": -2
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 5,
+          "battery": 928,
+          "position": {
+            "x": -8,
+            "y": 0,
+            "z": 6
+          },
+          "has_object": false,
+          "has_task": false
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939850.9000082,
+      "relative_time": 56,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 956,
+          "position": {
+            "x": 8,
+            "y": 0,
+            "z": -8
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 2,
+          "battery": 479,
+          "position": {
+            "x": -2,
+            "y": 0,
+            "z": 2
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 3,
+          "battery": 555,
+          "position": {
+            "x": -6,
+            "y": 0,
+            "z": 6
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 4,
+          "battery": 602,
+          "position": {
+            "x": -8,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 5,
+          "battery": 913,
+          "position": {
+            "x": -6,
+            "y": 0,
+            "z": 6
+          },
+          "has_object": false,
+          "has_task": false
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939853.1949105,
+      "relative_time": 58,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 934,
+          "position": {
+            "x": -6,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 2,
+          "battery": 459,
+          "position": {
+            "x": 4,
+            "y": 0,
+            "z": 4
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 3,
+          "battery": 534,
+          "position": {
+            "x": 4,
+            "y": 0,
+            "z": 6
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 4,
+          "battery": 581,
+          "position": {
+            "x": -2,
+            "y": 0,
+            "z": 2
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 5,
+          "battery": 894,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": false,
+          "has_task": false
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939855.1109657,
+      "relative_time": 60,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 917,
+          "position": {
+            "x": -4,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 2,
+          "battery": 442,
+          "position": {
+            "x": 6,
+            "y": 0,
+            "z": -8
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 3,
+          "battery": 516,
+          "position": {
+            "x": 8,
+            "y": 0,
+            "z": 2
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 4,
+          "battery": 564,
+          "position": {
+            "x": 10,
+            "y": 0,
+            "z": 4
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 5,
+          "battery": 875,
+          "position": {
+            "x": 8,
+            "y": 0,
+            "z": -8
+          },
+          "has_object": false,
+          "has_task": true
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939855.5326273,
+      "relative_time": 60,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 913,
+          "position": {
+            "x": -8,
+            "y": 0,
+            "z": 6
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 2,
+          "battery": 438,
+          "position": {
+            "x": 2,
+            "y": 0,
+            "z": -8
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 3,
+          "battery": 512,
+          "position": {
+            "x": 10,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 4,
+          "battery": 561,
+          "position": {
+            "x": 4,
+            "y": 0,
+            "z": 4
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 5,
+          "battery": 871,
+          "position": {
+            "x": 6,
+            "y": 0,
+            "z": -2
+          },
+          "has_object": false,
+          "has_task": true
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939857.1720192,
+      "relative_time": 62,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 898,
+          "position": {
+            "x": -6,
+            "y": 0,
+            "z": 2
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 2,
+          "battery": 424,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 4
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 3,
+          "battery": 500,
+          "position": {
+            "x": 4,
+            "y": 0,
+            "z": 6
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 4,
+          "battery": 549,
+          "position": {
+            "x": -8,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 5,
+          "battery": 856,
+          "position": {
+            "x": 2,
+            "y": 0,
+            "z": 2
+          },
+          "has_object": true,
+          "has_task": true
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939857.8885791,
+      "relative_time": 63,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 891,
+          "position": {
+            "x": -8,
+            "y": 0,
+            "z": -6
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 2,
+          "battery": 417,
+          "position": {
+            "x": -4,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 3,
+          "battery": 493,
+          "position": {
+            "x": 2,
+            "y": 0,
+            "z": 2
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 4,
+          "battery": 543,
+          "position": {
+            "x": -6,
+            "y": 0,
+            "z": 6
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 5,
+          "battery": 850,
+          "position": {
+            "x": -6,
+            "y": 0,
+            "z": 6
+          },
+          "has_object": true,
+          "has_task": true
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939859.16829,
+      "relative_time": 64,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 880,
+          "position": {
+            "x": -10,
+            "y": 0,
+            "z": -8
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 2,
+          "battery": 406,
+          "position": {
+            "x": 6,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 3,
+          "battery": 482,
+          "position": {
+            "x": 8,
+            "y": 0,
+            "z": -10
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 4,
+          "battery": 534,
+          "position": {
+            "x": -10,
+            "y": 0,
+            "z": 4
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 5,
+          "battery": 840,
+          "position": {
+            "x": -4,
+            "y": 0,
+            "z": 2
+          },
+          "has_object": false,
+          "has_task": false
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939860.165211,
+      "relative_time": 65,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 872,
+          "position": {
+            "x": -8,
+            "y": 0,
+            "z": 6
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 2,
+          "battery": 398,
+          "position": {
+            "x": -2,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 3,
+          "battery": 473,
+          "position": {
+            "x": 8,
+            "y": 0,
+            "z": -2
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 4,
+          "battery": 527,
+          "position": {
+            "x": -6,
+            "y": 0,
+            "z": 6
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 5,
+          "battery": 830,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 2
+          },
+          "has_object": false,
+          "has_task": true
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939860.2429628,
+      "relative_time": 65,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 871,
+          "position": {
+            "x": -6,
+            "y": 0,
+            "z": 6
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 2,
+          "battery": 397,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 3,
+          "battery": 473,
+          "position": {
+            "x": 8,
+            "y": 0,
+            "z": -2
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 4,
+          "battery": 527,
+          "position": {
+            "x": -6,
+            "y": 0,
+            "z": 6
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 5,
+          "battery": 830,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 2
+          },
+          "has_object": false,
+          "has_task": true
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939862.156728,
+      "relative_time": 67,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 855,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 2
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 2,
+          "battery": 386,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 3,
+          "battery": 454,
+          "position": {
+            "x": 4,
+            "y": 0,
+            "z": 4
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 4,
+          "battery": 510,
+          "position": {
+            "x": -4,
+            "y": 0,
+            "z": 6
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 5,
+          "battery": 811,
+          "position": {
+            "x": -4,
+            "y": 0,
+            "z": 2
+          },
+          "has_object": true,
+          "has_task": true
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939862.5785396,
+      "relative_time": 67,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 851,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 2
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 2,
+          "battery": 385,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 3,
+          "battery": 451,
+          "position": {
+            "x": 2,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 4,
+          "battery": 507,
+          "position": {
+            "x": -2,
+            "y": 0,
+            "z": 6
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 5,
+          "battery": 807,
+          "position": {
+            "x": -6,
+            "y": 0,
+            "z": 4
+          },
+          "has_object": true,
+          "has_task": true
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939864.170746,
+      "relative_time": 69,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 836,
+          "position": {
+            "x": -2,
+            "y": 0,
+            "z": -4
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 2,
+          "battery": 382,
+          "position": {
+            "x": 2,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 3,
+          "battery": 438,
+          "position": {
+            "x": -6,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 4,
+          "battery": 498,
+          "position": {
+            "x": 2,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 5,
+          "battery": 793,
+          "position": {
+            "x": -10,
+            "y": 0,
+            "z": 6
+          },
+          "has_object": false,
+          "has_task": true
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939864.917247,
+      "relative_time": 70,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 830,
+          "position": {
+            "x": -2,
+            "y": 0,
+            "z": 4
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 2,
+          "battery": 382,
+          "position": {
+            "x": 2,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 3,
+          "battery": 431,
+          "position": {
+            "x": 2,
+            "y": 0,
+            "z": 6
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 4,
+          "battery": 498,
+          "position": {
+            "x": 2,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 5,
+          "battery": 786,
+          "position": {
+            "x": -10,
+            "y": 0,
+            "z": -4
+          },
+          "has_object": false,
+          "has_task": true
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939866.1784587,
+      "relative_time": 71,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 820,
+          "position": {
+            "x": -2,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 2,
+          "battery": 999,
+          "position": {
+            "x": 2,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 3,
+          "battery": 423,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 4,
+          "battery": 494,
+          "position": {
+            "x": -4,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 5,
+          "battery": 774,
+          "position": {
+            "x": -10,
+            "y": 0,
+            "z": 6
+          },
+          "has_object": true,
+          "has_task": true
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939867.1601484,
+      "relative_time": 72,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 812,
+          "position": {
+            "x": -4,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 2,
+          "battery": 991,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 4
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 3,
+          "battery": 413,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": -8
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 4,
+          "battery": 485,
+          "position": {
+            "x": -2,
+            "y": 0,
+            "z": 6
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 5,
+          "battery": 764,
+          "position": {
+            "x": -10,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939867.2521605,
+      "relative_time": 72,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 811,
+          "position": {
+            "x": -4,
+            "y": 0,
+            "z": 6
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 2,
+          "battery": 990,
+          "position": {
+            "x": -2,
+            "y": 0,
+            "z": 4
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 3,
+          "battery": 412,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": -10
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 4,
+          "battery": 485,
+          "position": {
+            "x": -2,
+            "y": 0,
+            "z": 6
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 5,
+          "battery": 764,
+          "position": {
+            "x": -10,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939869.1811154,
+      "relative_time": 74,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 793,
+          "position": {
+            "x": -10,
+            "y": 0,
+            "z": 4
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 2,
+          "battery": 975,
+          "position": {
+            "x": -10,
+            "y": 0,
+            "z": -8
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 3,
+          "battery": 395,
+          "position": {
+            "x": -8,
+            "y": 0,
+            "z": 6
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 4,
+          "battery": 991,
+          "position": {
+            "x": 4,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 5,
+          "battery": 751,
+          "position": {
+            "x": -10,
+            "y": 0,
+            "z": 6
+          },
+          "has_object": false,
+          "has_task": false
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939869.603639,
+      "relative_time": 74,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 789,
+          "position": {
+            "x": -8,
+            "y": 0,
+            "z": -2
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 2,
+          "battery": 971,
+          "position": {
+            "x": -10,
+            "y": 0,
+            "z": -4
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 3,
+          "battery": 392,
+          "position": {
+            "x": -10,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 4,
+          "battery": 988,
+          "position": {
+            "x": 6,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 5,
+          "battery": 747,
+          "position": {
+            "x": -6,
+            "y": 0,
+            "z": 6
+          },
+          "has_object": false,
+          "has_task": false
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939871.1972003,
+      "relative_time": 76,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 774,
+          "position": {
+            "x": -2,
+            "y": 0,
+            "z": -10
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 2,
+          "battery": 957,
+          "position": {
+            "x": -2,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 3,
+          "battery": 380,
+          "position": {
+            "x": -8,
+            "y": 0,
+            "z": 2
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 4,
+          "battery": 979,
+          "position": {
+            "x": 8,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 5,
+          "battery": 732,
+          "position": {
+            "x": -6,
+            "y": 0,
+            "z": 0
+          },
+          "has_object": false,
+          "has_task": false
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939871.9477718,
+      "relative_time": 77,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 768,
+          "position": {
+            "x": -6,
+            "y": 0,
+            "z": -6
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 2,
+          "battery": 950,
+          "position": {
+            "x": -4,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 3,
+          "battery": 374,
+          "position": {
+            "x": -8,
+            "y": 0,
+            "z": 2
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 4,
+          "battery": 974,
+          "position": {
+            "x": 10,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 5,
+          "battery": 725,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 0
+          },
+          "has_object": false,
+          "has_task": false
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939873.1625557,
+      "relative_time": 78,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 757,
+          "position": {
+            "x": -4,
+            "y": 0,
+            "z": 0
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 2,
+          "battery": 939,
+          "position": {
+            "x": -2,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 3,
+          "battery": 363,
+          "position": {
+            "x": -2,
+            "y": 0,
+            "z": 6
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 4,
+          "battery": 963,
+          "position": {
+            "x": -4,
+            "y": 0,
+            "z": 4
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 5,
+          "battery": 713,
+          "position": {
+            "x": -2,
+            "y": 0,
+            "z": -6
+          },
+          "has_object": false,
+          "has_task": true
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939874.1776707,
+      "relative_time": 79,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 749,
+          "position": {
+            "x": -6,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 2,
+          "battery": 931,
+          "position": {
+            "x": -8,
+            "y": 0,
+            "z": 4
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 3,
+          "battery": 357,
+          "position": {
+            "x": -2,
+            "y": 0,
+            "z": -2
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 4,
+          "battery": 956,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 5,
+          "battery": 704,
+          "position": {
+            "x": -2,
+            "y": 0,
+            "z": -2
+          },
+          "has_object": true,
+          "has_task": true
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939874.2876585,
+      "relative_time": 79,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 747,
+          "position": {
+            "x": -4,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 2,
+          "battery": 930,
+          "position": {
+            "x": -8,
+            "y": 0,
+            "z": 2
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 3,
+          "battery": 356,
+          "position": {
+            "x": -2,
+            "y": 0,
+            "z": -4
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 4,
+          "battery": 955,
+          "position": {
+            "x": 2,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 5,
+          "battery": 703,
+          "position": {
+            "x": -2,
+            "y": 0,
+            "z": 0
+          },
+          "has_object": true,
+          "has_task": true
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939876.1615841,
+      "relative_time": 81,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 734,
+          "position": {
+            "x": -2,
+            "y": 0,
+            "z": 6
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 2,
+          "battery": 916,
+          "position": {
+            "x": -6,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 3,
+          "battery": 339,
+          "position": {
+            "x": -2,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 4,
+          "battery": 943,
+          "position": {
+            "x": 4,
+            "y": 0,
+            "z": 4
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 5,
+          "battery": 686,
+          "position": {
+            "x": 2,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939876.6446297,
+      "relative_time": 81,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 729,
+          "position": {
+            "x": -4,
+            "y": 0,
+            "z": 6
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 2,
+          "battery": 911,
+          "position": {
+            "x": -6,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 3,
+          "battery": 335,
+          "position": {
+            "x": -2,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 4,
+          "battery": 938,
+          "position": {
+            "x": 4,
+            "y": 0,
+            "z": 2
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 5,
+          "battery": 681,
+          "position": {
+            "x": 4,
+            "y": 0,
+            "z": 4
+          },
+          "has_object": false,
+          "has_task": false
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939878.1739721,
+      "relative_time": 83,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 716,
+          "position": {
+            "x": -8,
+            "y": 0,
+            "z": 0
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 2,
+          "battery": 898,
+          "position": {
+            "x": 4,
+            "y": 0,
+            "z": 6
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 3,
+          "battery": 322,
+          "position": {
+            "x": -8,
+            "y": 0,
+            "z": 2
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 4,
+          "battery": 925,
+          "position": {
+            "x": 6,
+            "y": 0,
+            "z": -10
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 5,
+          "battery": 670,
+          "position": {
+            "x": 8,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": false,
+          "has_task": false
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939879.0007775,
+      "relative_time": 84,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 711,
+          "position": {
+            "x": -4,
+            "y": 0,
+            "z": 2
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 2,
+          "battery": 890,
+          "position": {
+            "x": 4,
+            "y": 0,
+            "z": -2
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 3,
+          "battery": 315,
+          "position": {
+            "x": -8,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 4,
+          "battery": 918,
+          "position": {
+            "x": 8,
+            "y": 0,
+            "z": 0
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 5,
+          "battery": 664,
+          "position": {
+            "x": 8,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": false,
+          "has_task": false
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939880.1774251,
+      "relative_time": 85,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 703,
+          "position": {
+            "x": -2,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 2,
+          "battery": 880,
+          "position": {
+            "x": 4,
+            "y": 0,
+            "z": -8
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 3,
+          "battery": 306,
+          "position": {
+            "x": -10,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 4,
+          "battery": 908,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 5,
+          "battery": 655,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939881.1732757,
+      "relative_time": 86,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 695,
+          "position": {
+            "x": -6,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 2,
+          "battery": 871,
+          "position": {
+            "x": 4,
+            "y": 0,
+            "z": 6
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 3,
+          "battery": 299,
+          "position": {
+            "x": -8,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 4,
+          "battery": 900,
+          "position": {
+            "x": -6,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 5,
+          "battery": 647,
+          "position": {
+            "x": 2,
+            "y": 0,
+            "z": 6
+          },
+          "has_object": false,
+          "has_task": true
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939881.3619425,
+      "relative_time": 86,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 693,
+          "position": {
+            "x": -2,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 2,
+          "battery": 869,
+          "position": {
+            "x": 2,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 3,
+          "battery": 297,
+          "position": {
+            "x": -8,
+            "y": 0,
+            "z": 4
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 4,
+          "battery": 899,
+          "position": {
+            "x": -4,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 5,
+          "battery": 645,
+          "position": {
+            "x": 2,
+            "y": 0,
+            "z": 2
+          },
+          "has_object": false,
+          "has_task": true
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939883.15343,
+      "relative_time": 88,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 678,
+          "position": {
+            "x": 2,
+            "y": 0,
+            "z": -2
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 2,
+          "battery": 853,
+          "position": {
+            "x": 6,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 3,
+          "battery": 280,
+          "position": {
+            "x": 4,
+            "y": 0,
+            "z": 2
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 4,
+          "battery": 883,
+          "position": {
+            "x": -4,
+            "y": 0,
+            "z": 4
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 5,
+          "battery": 628,
+          "position": {
+            "x": 4,
+            "y": 0,
+            "z": -4
+          },
+          "has_object": true,
+          "has_task": true
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939883.7103698,
+      "relative_time": 88,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 673,
+          "position": {
+            "x": 4,
+            "y": 0,
+            "z": -2
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 2,
+          "battery": 849,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 3,
+          "battery": 275,
+          "position": {
+            "x": 6,
+            "y": 0,
+            "z": 2
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 4,
+          "battery": 878,
+          "position": {
+            "x": -6,
+            "y": 0,
+            "z": 0
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 5,
+          "battery": 624,
+          "position": {
+            "x": 2,
+            "y": 0,
+            "z": -2
+          },
+          "has_object": true,
+          "has_task": true
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939885.1646056,
+      "relative_time": 90,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 663,
+          "position": {
+            "x": 8,
+            "y": 0,
+            "z": -10
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 2,
+          "battery": 837,
+          "position": {
+            "x": -10,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 3,
+          "battery": 264,
+          "position": {
+            "x": 8,
+            "y": 0,
+            "z": 2
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 4,
+          "battery": 866,
+          "position": {
+            "x": 4,
+            "y": 0,
+            "z": -10
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 5,
+          "battery": 610,
+          "position": {
+            "x": -6,
+            "y": 0,
+            "z": 6
+          },
+          "has_object": true,
+          "has_task": true
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939886.0638278,
+      "relative_time": 91,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 654,
+          "position": {
+            "x": 4,
+            "y": 0,
+            "z": -6
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 2,
+          "battery": 830,
+          "position": {
+            "x": -8,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 3,
+          "battery": 256,
+          "position": {
+            "x": -6,
+            "y": 0,
+            "z": 4
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 4,
+          "battery": 858,
+          "position": {
+            "x": 2,
+            "y": 0,
+            "z": -2
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 5,
+          "battery": 601,
+          "position": {
+            "x": -2,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": false,
+          "has_task": false
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939887.1579764,
+      "relative_time": 92,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 644,
+          "position": {
+            "x": -6,
+            "y": 0,
+            "z": 4
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 2,
+          "battery": 821,
+          "position": {
+            "x": -6,
+            "y": 0,
+            "z": -6
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 3,
+          "battery": 249,
+          "position": {
+            "x": -10,
+            "y": 0,
+            "z": 2
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 4,
+          "battery": 849,
+          "position": {
+            "x": -6,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 5,
+          "battery": 595,
+          "position": {
+            "x": 2,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": false,
+          "has_task": false
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939888.1874955,
+      "relative_time": 93,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 634,
+          "position": {
+            "x": -10,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 2,
+          "battery": 811,
+          "position": {
+            "x": -4,
+            "y": 0,
+            "z": -8
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 3,
+          "battery": 240,
+          "position": {
+            "x": -4,
+            "y": 0,
+            "z": 2
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 4,
+          "battery": 840,
+          "position": {
+            "x": -6,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 5,
+          "battery": 588,
+          "position": {
+            "x": 6,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939888.4068427,
+      "relative_time": 93,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 632,
+          "position": {
+            "x": -10,
+            "y": 0,
+            "z": 6
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 2,
+          "battery": 809,
+          "position": {
+            "x": -4,
+            "y": 0,
+            "z": -6
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 3,
+          "battery": 238,
+          "position": {
+            "x": -2,
+            "y": 0,
+            "z": 4
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 4,
+          "battery": 838,
+          "position": {
+            "x": -6,
+            "y": 0,
+            "z": 6
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 5,
+          "battery": 587,
+          "position": {
+            "x": 6,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": false,
+          "has_task": false
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939890.1867163,
+      "relative_time": 95,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 614,
+          "position": {
+            "x": -8,
+            "y": 0,
+            "z": -8
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 2,
+          "battery": 792,
+          "position": {
+            "x": -2,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 3,
+          "battery": 224,
+          "position": {
+            "x": 2,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 4,
+          "battery": 822,
+          "position": {
+            "x": -10,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 5,
+          "battery": 576,
+          "position": {
+            "x": -4,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": false,
+          "has_task": false
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939890.7501404,
+      "relative_time": 95,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 609,
+          "position": {
+            "x": -8,
+            "y": 0,
+            "z": -8
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 2,
+          "battery": 788,
+          "position": {
+            "x": 4,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 3,
+          "battery": 224,
+          "position": {
+            "x": 2,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 4,
+          "battery": 817,
+          "position": {
+            "x": -8,
+            "y": 0,
+            "z": 4
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 5,
+          "battery": 570,
+          "position": {
+            "x": -4,
+            "y": 0,
+            "z": 6
+          },
+          "has_object": false,
+          "has_task": false
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939892.278375,
+      "relative_time": 97,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 595,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 2,
+          "battery": 776,
+          "position": {
+            "x": -2,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 3,
+          "battery": 223,
+          "position": {
+            "x": 2,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 4,
+          "battery": 802,
+          "position": {
+            "x": 2,
+            "y": 0,
+            "z": -8
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 5,
+          "battery": 558,
+          "position": {
+            "x": -8,
+            "y": 0,
+            "z": 6
+          },
+          "has_object": false,
+          "has_task": false
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939893.0946913,
+      "relative_time": 98,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 588,
+          "position": {
+            "x": 2,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 2,
+          "battery": 769,
+          "position": {
+            "x": 2,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 3,
+          "battery": 223,
+          "position": {
+            "x": 2,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 4,
+          "battery": 796,
+          "position": {
+            "x": 4,
+            "y": 0,
+            "z": -10
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 5,
+          "battery": 552,
+          "position": {
+            "x": -10,
+            "y": 0,
+            "z": 0
+          },
+          "has_object": false,
+          "has_task": true
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939894.1586418,
+      "relative_time": 99,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 583,
+          "position": {
+            "x": 4,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 2,
+          "battery": 761,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 3,
+          "battery": 221,
+          "position": {
+            "x": 6,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 4,
+          "battery": 785,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 6
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 5,
+          "battery": 542,
+          "position": {
+            "x": -6,
+            "y": 0,
+            "z": -4
+          },
+          "has_object": false,
+          "has_task": true
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939895.161587,
+      "relative_time": 100,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 579,
+          "position": {
+            "x": 8,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 2,
+          "battery": 753,
+          "position": {
+            "x": 2,
+            "y": 0,
+            "z": 6
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 3,
+          "battery": 992,
+          "position": {
+            "x": 6,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 4,
+          "battery": 776,
+          "position": {
+            "x": -8,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 5,
+          "battery": 534,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": -10
+          },
+          "has_object": false,
+          "has_task": true
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939895.473315,
+      "relative_time": 100,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 577,
+          "position": {
+            "x": 4,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 2,
+          "battery": 750,
+          "position": {
+            "x": 2,
+            "y": 0,
+            "z": 0
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 3,
+          "battery": 990,
+          "position": {
+            "x": 10,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 4,
+          "battery": 773,
+          "position": {
+            "x": -6,
+            "y": 0,
+            "z": 6
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 5,
+          "battery": 531,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": -8
+          },
+          "has_object": false,
+          "has_task": true
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939897.1904893,
+      "relative_time": 102,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 567,
+          "position": {
+            "x": 4,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 2,
+          "battery": 734,
+          "position": {
+            "x": 6,
+            "y": 0,
+            "z": -2
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 3,
+          "battery": 977,
+          "position": {
+            "x": 2,
+            "y": 0,
+            "z": 4
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 4,
+          "battery": 757,
+          "position": {
+            "x": -8,
+            "y": 0,
+            "z": 0
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 5,
+          "battery": 517,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": -2
+          },
+          "has_object": true,
+          "has_task": true
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939897.8135219,
+      "relative_time": 102,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 563,
+          "position": {
+            "x": 6,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 2,
+          "battery": 728,
+          "position": {
+            "x": 2,
+            "y": 0,
+            "z": 2
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 3,
+          "battery": 972,
+          "position": {
+            "x": -4,
+            "y": 0,
+            "z": 4
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 4,
+          "battery": 751,
+          "position": {
+            "x": -6,
+            "y": 0,
+            "z": -6
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 5,
+          "battery": 511,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": -2
+          },
+          "has_object": true,
+          "has_task": true
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939899.1705444,
+      "relative_time": 104,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 553,
+          "position": {
+            "x": 10,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 2,
+          "battery": 716,
+          "position": {
+            "x": -6,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 3,
+          "battery": 962,
+          "position": {
+            "x": -2,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 4,
+          "battery": 738,
+          "position": {
+            "x": -4,
+            "y": 0,
+            "z": -4
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 5,
+          "battery": 500,
+          "position": {
+            "x": -2,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": true,
+          "has_task": true
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939900.1851947,
+      "relative_time": 105,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 545,
+          "position": {
+            "x": 2,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 2,
+          "battery": 707,
+          "position": {
+            "x": -6,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 3,
+          "battery": 952,
+          "position": {
+            "x": -2,
+            "y": 0,
+            "z": -6
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 4,
+          "battery": 728,
+          "position": {
+            "x": -4,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 5,
+          "battery": 492,
+          "position": {
+            "x": -4,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": false,
+          "has_task": false
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939901.194221,
+      "relative_time": 106,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 536,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 2,
+          "battery": 700,
+          "position": {
+            "x": -10,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 3,
+          "battery": 944,
+          "position": {
+            "x": 4,
+            "y": 0,
+            "z": -10
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 4,
+          "battery": 720,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 6
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 5,
+          "battery": 484,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": false,
+          "has_task": false
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939902.1649587,
+      "relative_time": 107,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 528,
+          "position": {
+            "x": 2,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 2,
+          "battery": 692,
+          "position": {
+            "x": -6,
+            "y": 0,
+            "z": 4
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 3,
+          "battery": 934,
+          "position": {
+            "x": 4,
+            "y": 0,
+            "z": -6
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 4,
+          "battery": 710,
+          "position": {
+            "x": -2,
+            "y": 0,
+            "z": -4
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 5,
+          "battery": 484,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": false,
+          "has_task": false
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939902.558069,
+      "relative_time": 107,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 524,
+          "position": {
+            "x": 4,
+            "y": 0,
+            "z": 4
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 2,
+          "battery": 689,
+          "position": {
+            "x": -4,
+            "y": 0,
+            "z": 4
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 3,
+          "battery": 930,
+          "position": {
+            "x": 4,
+            "y": 0,
+            "z": -2
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 4,
+          "battery": 706,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": -10
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 5,
+          "battery": 484,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": false,
+          "has_task": false
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939904.2591012,
+      "relative_time": 109,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 513,
+          "position": {
+            "x": 4,
+            "y": 0,
+            "z": 6
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 2,
+          "battery": 676,
+          "position": {
+            "x": -2,
+            "y": 0,
+            "z": 0
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 3,
+          "battery": 914,
+          "position": {
+            "x": -10,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 4,
+          "battery": 693,
+          "position": {
+            "x": 4,
+            "y": 0,
+            "z": 2
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 5,
+          "battery": 477,
+          "position": {
+            "x": -4,
+            "y": 0,
+            "z": 4
+          },
+          "has_object": false,
+          "has_task": false
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939904.9123077,
+      "relative_time": 110,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 509,
+          "position": {
+            "x": 6,
+            "y": 0,
+            "z": 4
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 2,
+          "battery": 670,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": -10
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 3,
+          "battery": 909,
+          "position": {
+            "x": -8,
+            "y": 0,
+            "z": 6
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 4,
+          "battery": 687,
+          "position": {
+            "x": 0,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 5,
+          "battery": 471,
+          "position": {
+            "x": -10,
+            "y": 0,
+            "z": 6
+          },
+          "has_object": false,
+          "has_task": false
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939906.1589725,
+      "relative_time": 111,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 501,
+          "position": {
+            "x": 10,
+            "y": 0,
+            "z": 4
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 2,
+          "battery": 658,
+          "position": {
+            "x": -4,
+            "y": 0,
+            "z": 4
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 3,
+          "battery": 897,
+          "position": {
+            "x": -6,
+            "y": 0,
+            "z": -8
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 4,
+          "battery": 675,
+          "position": {
+            "x": -2,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 5,
+          "battery": 461,
+          "position": {
+            "x": -10,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": false,
+          "has_task": false
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939907.177938,
+      "relative_time": 112,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 492,
+          "position": {
+            "x": 2,
+            "y": 0,
+            "z": 6
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 2,
+          "battery": 649,
+          "position": {
+            "x": -10,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 3,
+          "battery": 887,
+          "position": {
+            "x": -2,
+            "y": 0,
+            "z": -8
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 4,
+          "battery": 665,
+          "position": {
+            "x": 10,
+            "y": 0,
+            "z": 6
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 5,
+          "battery": 451,
+          "position": {
+            "x": -4,
+            "y": 0,
+            "z": 0
+          },
+          "has_object": false,
+          "has_task": true
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939907.2554471,
+      "relative_time": 112,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 492,
+          "position": {
+            "x": 2,
+            "y": 0,
+            "z": 6
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 2,
+          "battery": 649,
+          "position": {
+            "x": -10,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": true,
+          "has_task": true
+        },
+        {
+          "id": 3,
+          "battery": 887,
+          "position": {
+            "x": -2,
+            "y": 0,
+            "z": -8
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 4,
+          "battery": 665,
+          "position": {
+            "x": 10,
+            "y": 0,
+            "z": 6
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 5,
+          "battery": 451,
+          "position": {
+            "x": -4,
+            "y": 0,
+            "z": 0
+          },
+          "has_object": false,
+          "has_task": true
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939909.180446,
+      "relative_time": 114,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 488,
+          "position": {
+            "x": 4,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 2,
+          "battery": 632,
+          "position": {
+            "x": -4,
+            "y": 0,
+            "z": -2
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 3,
+          "battery": 870,
+          "position": {
+            "x": -4,
+            "y": 0,
+            "z": -8
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 4,
+          "battery": 650,
+          "position": {
+            "x": -4,
+            "y": 0,
+            "z": 6
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 5,
+          "battery": 433,
+          "position": {
+            "x": -8,
+            "y": 0,
+            "z": -2
+          },
+          "has_object": true,
+          "has_task": true
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939909.6165602,
+      "relative_time": 114,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 488,
+          "position": {
+            "x": 4,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 2,
+          "battery": 628,
+          "position": {
+            "x": -2,
+            "y": 0,
+            "z": 0
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 3,
+          "battery": 866,
+          "position": {
+            "x": -4,
+            "y": 0,
+            "z": -8
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 4,
+          "battery": 647,
+          "position": {
+            "x": -2,
+            "y": 0,
+            "z": 6
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 5,
+          "battery": 429,
+          "position": {
+            "x": -8,
+            "y": 0,
+            "z": -2
+          },
+          "has_object": true,
+          "has_task": true
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939911.152802,
+      "relative_time": 116,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 487,
+          "position": {
+            "x": 2,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 2,
+          "battery": 613,
+          "position": {
+            "x": 8,
+            "y": 0,
+            "z": 4
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 3,
+          "battery": 851,
+          "position": {
+            "x": -6,
+            "y": 0,
+            "z": -8
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 4,
+          "battery": 633,
+          "position": {
+            "x": 4,
+            "y": 0,
+            "z": 4
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 5,
+          "battery": 414,
+          "position": {
+            "x": -8,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": false,
+          "has_task": false
+        }
+      ]
+    },
+    {
+      "timestamp": 1756939911.9796834,
+      "relative_time": 117,
+      "agents": [
+        {
+          "id": 1,
+          "battery": 997,
+          "position": {
+            "x": -2,
+            "y": 0,
+            "z": 10
+          },
+          "has_object": false,
+          "has_task": false
+        },
+        {
+          "id": 2,
+          "battery": 606,
+          "position": {
+            "x": 8,
+            "y": 0,
+            "z": -2
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 3,
+          "battery": 844,
+          "position": {
+            "x": -4,
+            "y": 0,
+            "z": -8
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 4,
+          "battery": 626,
+          "position": {
+            "x": 2,
+            "y": 0,
+            "z": 4
+          },
+          "has_object": false,
+          "has_task": true
+        },
+        {
+          "id": 5,
+          "battery": 407,
+          "position": {
+            "x": -4,
+            "y": 0,
+            "z": 8
+          },
+          "has_object": false,
+          "has_task": false
+        }
+      ]
+    }
+  ]
+}

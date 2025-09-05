@@ -53,11 +53,13 @@
 
   .dashboard-grid {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     min-height: calc(100vh - 160px); /* Altura completa menos header y footer */
     padding: 20px;
     margin-left: 260px; /* Espacio para el sidebar */
+    gap: 20px;
   }
 
   .unity-section {
@@ -69,6 +71,53 @@
     max-width: 800px;
     width: 100%;
     margin: 0 auto;
+  }
+  
+  .telemetry-section {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    padding: 20px;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .telemetry-header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .telemetry-header h3 {
+    color: #ffd700;
+    margin-bottom: 10px;
+  }
+  
+  .chart-container {
+    position: relative;
+    height: 400px;
+    width: 100%;
+  }
+  
+  .telemetry-status {
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    margin: 5px 0;
+  }
+  
+  .telemetry-connected {
+    background-color: rgba(0, 255, 0, 0.2);
+    color: #00ff00;
+    border: 1px solid #00ff00;
+  }
+  
+  .telemetry-disconnected {
+    background-color: rgba(255, 0, 0, 0.2);
+    color: #ff0000;
+    border: 1px solid #ff0000;
   }
 </style>
 {% endblock %} {% block content %}
@@ -96,6 +145,20 @@
         <p>No screenshots received yet.</p>
         <p>Make sure Unity is running and sending screenshots.</p>
       </div>
+    </div>
+  </section>
+  
+  <!-- Sección de Telemetría de Batería -->
+  <section class="telemetry-section">
+    <div class="telemetry-header">
+      <h3><i class="fa-solid fa-chart-line"></i> Battery Telemetry</h3>
+      <div id="telemetryStatus" class="telemetry-status telemetry-disconnected">
+        <i class="fa-solid fa-circle"></i> Connecting to Python server...
+      </div>
+    </div>
+    
+    <div class="chart-container">
+      <canvas id="batteryChart"></canvas>
     </div>
   </section>
 </div>
@@ -149,5 +212,235 @@
 
   document.addEventListener("DOMContentLoaded", loadLiveStream);
   setInterval(loadLiveStream, 100);
+
+  // ==================== BATTERY TELEMETRY CHART ====================
+  
+  // Variables para la gráfica de telemetría
+  let batteryChart = null;
+  let telemetryData = {
+    labels: [], // Tiempo relativo (-30s a 0s)
+    datasets: [
+      {
+        label: 'Agent 1',
+        data: [],
+        borderColor: '#ff6b6b',
+        backgroundColor: 'rgba(255, 107, 107, 0.1)',
+        tension: 0.4,
+        pointRadius: 2
+      },
+      {
+        label: 'Agent 2',
+        data: [],
+        borderColor: '#4ecdc4',
+        backgroundColor: 'rgba(78, 205, 196, 0.1)',
+        tension: 0.4,
+        pointRadius: 2
+      },
+      {
+        label: 'Agent 3',
+        data: [],
+        borderColor: '#45b7d1',
+        backgroundColor: 'rgba(69, 183, 209, 0.1)',
+        tension: 0.4,
+        pointRadius: 2
+      },
+      {
+        label: 'Agent 4',
+        data: [],
+        borderColor: '#f9ca24',
+        backgroundColor: 'rgba(249, 202, 36, 0.1)',
+        tension: 0.4,
+        pointRadius: 2
+      },
+      {
+        label: 'Agent 5',
+        data: [],
+        borderColor: '#6c5ce7',
+        backgroundColor: 'rgba(108, 92, 231, 0.1)',
+        tension: 0.4,
+        pointRadius: 2
+      }
+    ]
+  };
+
+  function initBatteryChart() {
+    const ctx = document.getElementById('batteryChart').getContext('2d');
+    
+    batteryChart = new Chart(ctx, {
+      type: 'line',
+      data: telemetryData,
+      options: {
+        responsive: true,
+        maintainAspectRatio: false,
+        animation: {
+          duration: 0 // Desactivar animaciones para mejor rendimiento
+        },
+        scales: {
+          x: {
+            title: {
+              display: true,
+              text: 'Time (relative)',
+              color: '#ffd700'
+            },
+            ticks: {
+              color: '#ffd700',
+              callback: function(value, index, values) {
+                const timeValue = this.getLabelForValue(value);
+                return timeValue + 's';
+              }
+            },
+            grid: {
+              color: 'rgba(255, 215, 0, 0.2)'
+            }
+          },
+          y: {
+            title: {
+              display: true,
+              text: 'Battery Level',
+              color: '#ffd700'
+            },
+            min: 0,
+            max: 1000,
+            ticks: {
+              color: '#ffd700',
+              callback: function(value) {
+                return value;
+              }
+            },
+            grid: {
+              color: 'rgba(255, 215, 0, 0.2)'
+            }
+          }
+        },
+        plugins: {
+          legend: {
+            display: true,
+            labels: {
+              color: '#ffd700',
+              usePointStyle: true
+            }
+          },
+          tooltip: {
+            mode: 'index',
+            intersect: false,
+            callbacks: {
+              title: function(context) {
+                return 'Time: ' + context[0].label + 's';
+              },
+              label: function(context) {
+                const agentId = context.dataset.label;
+                const battery = context.parsed.y;
+                let batteryLevel = '';
+                
+                if (battery > 600) batteryLevel = ' (HIGH)';
+                else if (battery >= 200) batteryLevel = ' (MEDIUM)';
+                else if (battery >= 100) batteryLevel = ' (LOW)';
+                else batteryLevel = ' (CRITICAL)';
+                
+                return agentId + ': ' + battery + batteryLevel;
+              }
+            }
+          }
+        },
+        elements: {
+          line: {
+            borderWidth: 2
+          },
+          point: {
+            hoverRadius: 6
+          }
+        }
+      }
+    });
+  }
+
+  function updateTelemetryStatus(connected, message = '') {
+    const statusElement = document.getElementById("telemetryStatus");
+    if (connected) {
+      statusElement.className = "telemetry-status telemetry-connected";
+      statusElement.innerHTML = '<i class="fa-solid fa-circle"></i> Python Server Connected';
+    } else {
+      statusElement.className = "telemetry-status telemetry-disconnected";
+      statusElement.innerHTML = '<i class="fa-solid fa-circle"></i> ' + (message || 'Python Server Disconnected');
+    }
+  }
+
+  function loadTelemetryData() {
+    fetch("/api/telemetry")
+      .then((response) => response.json())
+      .then((data) => {
+        if (data.success && data.agents && data.agents.length > 0) {
+          updateTelemetryStatus(true);
+          updateBatteryChart(data);
+        } else {
+          updateTelemetryStatus(false, data.error || 'No agent data available');
+        }
+      })
+      .catch((error) => {
+        updateTelemetryStatus(false, 'Failed to fetch telemetry data');
+        console.error('Telemetry error:', error);
+      });
+  }
+
+  function updateBatteryChart(data) {
+    if (!batteryChart) return;
+    
+    const currentTime = -data.relative_time; // Tiempo relativo negativo
+    
+    // Añadir nuevo punto de tiempo
+    telemetryData.labels.push(currentTime);
+    
+    // Mantener solo los últimos 30 puntos
+    if (telemetryData.labels.length > 30) {
+      telemetryData.labels.shift();
+      
+      // Remover el primer punto de cada dataset
+      telemetryData.datasets.forEach(dataset => {
+        if (dataset.data.length > 30) {
+          dataset.data.shift();
+        }
+      });
+    }
+    
+    // Actualizar datos de cada agente
+    data.agents.forEach((agent, index) => {
+      if (index < telemetryData.datasets.length) {
+        telemetryData.datasets[index].data.push(agent.battery);
+        
+        // Cambiar color de línea según nivel de batería
+        let color = '#ff6b6b'; // Rojo por defecto
+        if (agent.battery > 600) {
+          color = '#2ecc71'; // Verde para batería alta
+        } else if (agent.battery >= 200) {
+          color = '#f39c12'; // Amarillo para batería media
+        } else {
+          color = '#e74c3c'; // Rojo para batería baja
+        }
+        
+        // Mantener color base pero ajustar opacidad
+        const colors = ['#ff6b6b', '#4ecdc4', '#45b7d1', '#f9ca24', '#6c5ce7'];
+        telemetryData.datasets[index].borderColor = colors[index];
+        
+        // Pero cambiar el color de fondo según batería
+        if (agent.battery > 600) {
+          telemetryData.datasets[index].backgroundColor = 'rgba(46, 204, 113, 0.1)';
+        } else if (agent.battery >= 200) {
+          telemetryData.datasets[index].backgroundColor = 'rgba(243, 156, 18, 0.1)';
+        } else {
+          telemetryData.datasets[index].backgroundColor = 'rgba(231, 76, 60, 0.1)';
+        }
+      }
+    });
+    
+    // Actualizar la gráfica
+    batteryChart.update('none'); // Sin animación para mejor rendimiento
+  }
+
+  // Inicializar gráfica cuando el DOM esté listo
+  document.addEventListener("DOMContentLoaded", function() {
+    initBatteryChart();
+    loadTelemetryData(); // Cargar datos inmediatamente
+    setInterval(loadTelemetryData, 1000); // Actualizar cada segundo
+  });
 </script>
 {% endblock %}
